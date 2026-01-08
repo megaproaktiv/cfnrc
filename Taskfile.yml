@@ -1,0 +1,21 @@
+# https://taskfile.dev
+
+version: '3'
+
+vars:
+  GREETING: Hello, World!
+
+tasks:
+  default:
+    cmds:
+      - task -l
+    silent: true
+  build:
+    desc: Build tool
+    cmds:
+      - go build -o cfn-analyzer ./main
+  run:
+    desc: Describe how to run
+    deps: [build]
+    cmds:
+      - echo "./cfn-analyzer $stackname"
