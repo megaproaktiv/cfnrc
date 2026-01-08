@@ -2,6 +2,8 @@
 
 A Go CLI tool that analyzes CloudFormation stack failures by correlating stack events with CloudTrail logs to reveal detailed error messages.
 
+Use at your own risk. This tool is provided as-is without any warranty or support.
+
 ## Usage
 
 ```bash
@@ -50,3 +52,7 @@ Name is already in use
 ```bash
 go build -o cfn-analyzer ./main
 ```
+
+## Prebuild binary
+
+See [Releases](https://github.com/megaproaktiv/cfnrc/releases) for prebuilt binaries.
